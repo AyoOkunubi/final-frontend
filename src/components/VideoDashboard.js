@@ -15,7 +15,7 @@ export default function VideoDashboard({ user }) {
       {videos.map(video => (
         <div key={video.id}>
           <h3>{video.title} ({video.publisher})</h3>
-          <video width="300" controls src={video.blobUrl}></video>
+          <video width="300" controls src={video.url}></video>
           <p>Genre: {video.genre} | Age: {video.ageRating}</p>
           <Comments videoId={video.id} user={user} />
         </div>
