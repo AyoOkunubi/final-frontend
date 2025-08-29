@@ -17,7 +17,7 @@ export default function UploadVideo() {
     formData.append("genre", genre);
     formData.append("ageRating", ageRating);
 
-    const res = await fetch("https://videos-edaxbna0g4b9fqc5.northeurope-01.azurewebsites.net/" + "videos/upload", {
+    const res = await fetch("https://videos-edaxbna0g4b9fqc5.northeurope-01.azurewebsites.net/" + "api/videos/upload", {
       method: "POST",
       headers: { Authorization: `Bearer ${token}` },
       body: formData,
